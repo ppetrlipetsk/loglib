@@ -6,4 +6,4 @@ Version 1.0.1-SNAPSHOT
 - метод putLineToLog(String log, String message) сделан public
 - добавлен метод public static void putLineToLog(String log, String message, boolean echo)
 Version 1.0.2-SNAPSHOT
-git add .
+- добавлен метод (ранее комментированный) init();

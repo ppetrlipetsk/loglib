@@ -16,7 +16,7 @@ import java.util.Map;
  *
  */
 
-public class Logger {
+public class Logger implements AutoCloseable{
 //    public static final String ERRORLOG= "ErrorLog";
 //    public static final String APPLOG= "AppLog";
 
