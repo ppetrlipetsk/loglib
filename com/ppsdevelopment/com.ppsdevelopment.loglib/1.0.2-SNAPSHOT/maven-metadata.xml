@@ -2,29 +2,29 @@
 <metadata modelVersion="1.1.0">
   <groupId>com.ppsdevelopment</groupId>
   <artifactId>com.ppsdevelopment.loglib</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20200616.112945</timestamp>
+      <timestamp>20200616.113743</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20200616112945</lastUpdated>
+    <lastUpdated>20200616113743</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0.1-20200616.112945-1</value>
-        <updated>20200616112945</updated>
+        <value>1.0.2-20200616.113743-1</value>
+        <updated>20200616113743</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0.1-20200616.112945-1</value>
-        <updated>20200616112945</updated>
+        <value>1.0.2-20200616.113743-1</value>
+        <updated>20200616113743</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>jar-with-dependencies</classifier>
         <extension>jar</extension>
-        <value>1.0.1-20200616.112945-1</value>
-        <updated>20200616112945</updated>
+        <value>1.0.2-20200616.113743-1</value>
+        <updated>20200616113743</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
