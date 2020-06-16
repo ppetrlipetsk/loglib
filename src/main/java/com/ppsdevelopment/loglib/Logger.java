@@ -164,9 +164,9 @@ public class Logger {
         }
     }
 
-//    public void init() throws IOException {
-//        logHandler=TextFileWriter.initWriter(this.fileName);
-//    }
+    public void init() throws IOException {
+        logHandler=TextFileWriter.initWriter(this.fileName);
+    }
 
     /**
      * Помещает строку в буффер логгера.

@@ -2,4 +2,8 @@ Version 1.0..0-SNAPSHOT
 - Убрал метод appLog
 - Добавлены геттеры и сеттеры полям класса
 
-mvn -U clean deploy
+Version 1.0.1-SNAPSHOT
+- метод putLineToLog(String log, String message) сделан public
+- добавлен метод public static void putLineToLog(String log, String message, boolean echo)
+Version 1.0.2-SNAPSHOT
+git add .

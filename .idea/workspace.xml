@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a18d61d4-2212-4a39-aef2-a74c419dc81b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history" beforeDir="false" afterPath="$PROJECT_DIR$/history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/loglib/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppsdevelopment/loglib/Logger.java" afterDir="false" />
@@ -67,7 +68,7 @@
       <workItem from="1592217991711" duration="1201000" />
       <workItem from="1592220221028" duration="1164000" />
       <workItem from="1592223403723" duration="21000" />
-      <workItem from="1592296848781" duration="4534000" />
+      <workItem from="1592296848781" duration="5853000" />
     </task>
     <servers />
   </component>
