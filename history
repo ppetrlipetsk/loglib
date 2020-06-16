@@ -1,3 +1,5 @@
 Version 1.0..0-SNAPSHOT
 - Убрал метод appLog
 - Добавлены геттеры и сеттеры полям класса
+
+mvn -U clean deploy

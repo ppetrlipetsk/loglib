@@ -109,7 +109,27 @@ public class Logger {
             }
         }
     }
-    private static void putLineToLog(String log, String message) {
+
+    /**
+     * Помещает строку message в буффер логгеров, указанных в параметре logs.
+     * Если echo=true, вывод дублируется на консоль.
+     * @param log - имя лога
+     * @param message - строка сообщения
+     * @param echo - если true, то дублирует вывод на консоль
+     */
+    public static void putLineToLog(String log, String message, boolean echo) {
+        if (echo) System.out.println(message);
+        putLineToLog(log,message);
+    }
+
+
+    /**
+     * Помещает строку message в буффер логгеров, указанных в параметре logs.     *
+     * @param log - имя лога
+     * @param message - строка сообщения
+     */
+
+    public static void putLineToLog(String log, String message) {
         Logger logger=null;
         if (loggers.containsKey(log)) {
             logger = loggers.get(log);
