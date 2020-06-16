@@ -6,13 +6,14 @@
 
     <groupId>com.ppsdevelopment</groupId>
     <artifactId>com.ppsdevelopment.loglib</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 
     <properties>
         <maven.compiler.release>8</maven.compiler.release>
         <github.global.server>github</github.global.server>
         <github.maven-plugin>0.12</github.maven-plugin>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <distributionManagement>
@@ -48,6 +49,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -81,6 +83,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -119,22 +122,26 @@
         </plugins>
     </build>
     <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter</artifactId>-->
+<!--            <version>RELEASE</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.ppsdevelopment</groupId>
-            <artifactId>com.ppsdevelopment.filelib</artifactId>
-            <version>1.0.0</version>
+            <artifactId>filelib</artifactId>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
     <repositories>
     <repository>
-        <id>com.ppetrlipetsk</id>
+        <id>filelib-mvn-repo</id>
         <url>https://raw.github.com/ppetrlipetsk/filelib/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
     </repository>
     </repositories>
 </project>
