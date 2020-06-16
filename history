@@ -7,3 +7,5 @@ Version 1.0.1-SNAPSHOT
 - добавлен метод public static void putLineToLog(String log, String message, boolean echo)
 Version 1.0.2-SNAPSHOT
 - добавлен метод (ранее комментированный) init();
+Version 1.0.3-SNAPSHOT
+- добавлена имплементация интерфейса AutoClosable
