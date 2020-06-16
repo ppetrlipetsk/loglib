@@ -4,8 +4,8 @@
   <artifactId>com.ppsdevelopment.loglib</artifactId>
   <versioning>
     <versions>
-      <version>1.0.3mvn -SNAPSHOT</version>
+      <version>1.0.3-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20200616132019</lastUpdated>
+    <lastUpdated>20200616132138</lastUpdated>
   </versioning>
 </metadata>

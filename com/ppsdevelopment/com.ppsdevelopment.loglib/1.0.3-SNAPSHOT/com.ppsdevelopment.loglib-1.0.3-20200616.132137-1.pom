@@ -6,7 +6,7 @@
 
     <groupId>com.ppsdevelopment</groupId>
     <artifactId>com.ppsdevelopment.loglib</artifactId>
-    <version>1.0.3 -SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
 
     <properties>
