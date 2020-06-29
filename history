@@ -9,3 +9,5 @@ Version 1.0.2-SNAPSHOT
 - добавлен метод (ранее комментированный) init();
 Version 1.0.3-SNAPSHOT
 - добавлена имплементация интерфейса AutoClosable
+Version 1.1.3-SNAPSHOT
+- добавлен метод createLoggers(String[])

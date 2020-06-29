@@ -17,10 +17,7 @@ import java.util.Map;
  */
 
 public class Logger implements AutoCloseable{
-//    public static final String ERRORLOG= "ErrorLog";
-//    public static final String APPLOG= "AppLog";
-
-    private static HashMap<String,Logger> loggers;
+    private final static HashMap<String,Logger> loggers;
     private static boolean exitWhenError;
     private static final int LINESLIMIT=30;
     private int linesLimit;
@@ -83,9 +80,7 @@ public class Logger implements AutoCloseable{
      * @return Возвращает экземпляр логгера с именем loggerName
      */
     public static Logger getLogger(String loggerName){
-        if (loggers.containsKey(loggerName)) return loggers.get(loggerName);
-        else
-            return null;
+        return loggers.getOrDefault(loggerName, null);
     }
 //
 //    public static void appLog(String message, boolean echo){
@@ -103,9 +98,8 @@ public class Logger implements AutoCloseable{
     public static void putLineToLogs(String[] logs, String message, boolean echo){
         if (echo) System.out.println(message);
         if (logs!=null){
-            for (int i=0;i<logs.length;i++)
-            {
-                putLineToLog(logs[i], message);
+            for (String log : logs) {
+                putLineToLog(log, message);
             }
         }
     }
@@ -130,7 +124,7 @@ public class Logger implements AutoCloseable{
      */
 
     public static void putLineToLog(String log, String message) {
-        Logger logger=null;
+        Logger logger;
         if (loggers.containsKey(log)) {
             logger = loggers.get(log);
             if (logger != null) logger.putLine(message);
@@ -205,7 +199,7 @@ public class Logger implements AutoCloseable{
     public void putLine(String message) {
         flushWhenOverLimit();
         //linesBuffer.add((new StringBuilder(message).append("\n")).toString());
-        put((new StringBuilder(message).append("\n")).toString());
+        put(message + "\n");
     }
 
     private void flushWhenOverLimit() {
@@ -224,17 +218,13 @@ public class Logger implements AutoCloseable{
             } catch (IOException e) {
                 e.printStackTrace();
                 if (logHandler!=null) closeSilence(false);
-                errorProcessing("Ошибка записи файла журнала");
+                errorProcessing();
             }
         }
     }
 
-    private void errorProcessing(String message){
-        System.out.println(message);
-        errorProcessing();
-    }
-
     private void errorProcessing(){
+        System.out.println("Ошибка записи файла журнала");
         if (exitWhenError) System.exit(1);
     }
 
@@ -260,5 +250,16 @@ public class Logger implements AutoCloseable{
         }
     }
 
+    /**
+     * Метод позволяет создать логгеры на основе их имен.
+     * @param loggers - имена логгеров
+     * @param linesLimit - размер строкового буффера
+     * @throws IOException
+     */
+    public static void createLoggers(String[] loggers, int linesLimit) throws IOException {
+        for(String log:loggers){
+            new Logger(log,log,linesLimit);
+        }
+    }
 
 }
